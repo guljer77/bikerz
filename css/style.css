@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bg-primary:#264653;
+    --bg-secondary:#0B0D17;
+    --bg-white:#ffffff;
+    --bg-red:#E76F51;
+
+    --text-primary:#FFFFFF;
+    --text-secondary:#000000;
+    --text-red:#E76F51;
+}
+.btn-primary{
+    background-color: var(--bg-red);
+    color: var(--text-primary);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid var(--bg-red);
+    transition: all 0.4s ease-in-out;
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--bg-white);
+    color: var(--text-red);
+}
+.header_wrapper .navbar-toggler{
+    color: var(--text-primary);
+}
+.header_wrapper .navbar-toggler:focus{
+    border: 0;
+    box-shadow: none;
+    color: var(--text-primary);
+}
+/* header-style */
+.header_wrapper{
+    background-color: var(--bg-primary);
+    padding-bottom: 2.5rem;
+}
+.header_wrapper .navbar-brand{
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-style: italic;
+}
+.header_wrapper .navbar-nav{
+    padding-right: 30px;
+}
+.header_wrapper .navbar-nav .nav-item{
+    padding: 0 15px;
+}
+.header_wrapper .navbar-nav .nav-link{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+.banner-content{
+    color: var(--text-primary);
+}
+.banner-content p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.banner-content h2{
+    font-size: 48px;
+    font-weight: 600;
+}
+/* featured-section */
+.featured-text{
+    position: relative;
+}
+.same-text{
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--text-secondary);
+}
+.featured-text h4{
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-red);
+}
+.featured-text h4::before{
+    content: '';
+    position: absolute;
+    width: 69px;
+    height: 2px;
+    top: 84px;
+    left: 47%;
+    background-color: var(--bg-red);
+}
+/* latest-section */
+.latest-items{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    border-radius: 5px;
+}
+.latest-items h2{
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--text-secondary);
+    margin: 15px 0px;
+}
+.latest-items p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+.btn-hover:hover{
+    border-color: var(--text-red);
+}
